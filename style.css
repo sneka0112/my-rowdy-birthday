@@ -1,0 +1,198 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f4c81,#ffffff);
+color:#222;
+text-align:center;
+overflow-x:hidden;
+}
+
+section{
+padding:60px 20px;
+}
+
+h1{
+font-size:40px;
+margin-bottom:20px;
+color:#0f4c81;
+}
+
+h2{
+font-size:30px;
+margin-bottom:20px;
+color:#1565c0;
+}
+
+p{
+font-size:18px;
+line-height:1.8;
+max-width:800px;
+margin:auto;
+}
+
+button{
+background:#1565c0;
+color:white;
+border:none;
+padding:15px 30px;
+font-size:18px;
+border-radius:50px;
+cursor:pointer;
+margin-top:20px;
+transition:.3s;
+}
+
+button:hover{
+background:#0d47a1;
+transform:scale(1.05);
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:white;
+}
+
+.hero h1{
+font-size:55px;
+}
+.gallery{
+padding:60px 20px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.gallery img{
+width:100%;
+border-radius:20px;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.story{
+background:#ffffff;
+}
+
+.letter{
+background:#f5f9ff;
+}
+
+.counter{
+background:#e3f2fd;
+}
+
+.birthday{
+background:#ffffff;
+}
+
+.promises{
+background:#f5f9ff;
+}
+
+.promises ul{
+list-style:none;
+padding:0;
+}
+
+.promises li{
+font-size:20px;
+margin:15px 0;
+}
+
+.quiz{
+background:#ffffff;
+}
+
+footer{
+padding:50px 20px;
+background:#0f4c81;
+color:white;
+}
+
+footer h2{
+color:white;
+}
+
+input{
+padding:15px;
+width:280px;
+border-radius:10px;
+border:2px solid #1565c0;
+font-size:18px;
+margin-top:15px;
+  }
+#password-page{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f4c81,#ffffff);
+}
+
+#main-page{
+animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.gallery img{
+aspect-ratio:3/4;
+object-fit:cover;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:36px;
+}
+
+h2{
+font-size:24px;
+}
+
+p{
+font-size:16px;
+padding:0 10px;
+}
+
+button{
+width:90%;
+font-size:16px;
+}
+
+input{
+width:90%;
+}
+
+.gallery-grid{
+grid-template-columns:1fr;
+}
+
+}
