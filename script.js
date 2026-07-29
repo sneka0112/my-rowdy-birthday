@@ -4,11 +4,7 @@ const password=document.getElementById("password").value;
 
 if(password==="0112"){
 
-document.getElementById("password-page").style.display="none";
-
-document.getElementById("main-page").style.display="block";
-
-calculateLoveDays();
+window.location.href="welcome.html";
 
 }else{
 
