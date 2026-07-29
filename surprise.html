@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Final Surprise ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+margin:0;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:linear-gradient(135deg,#0f4c81,#ffffff);
+overflow:hidden;
+text-align:center;
+font-family:Poppins,sans-serif;
+}
+
+.container{
+padding:30px;
+}
+
+h1{
+font-size:50px;
+color:#1565c0;
+animation:zoom 2s infinite;
+}
+
+p{
+font-size:22px;
+line-height:1.8;
+color:#222;
+}
+
+button{
+margin-top:20px;
+padding:15px 30px;
+font-size:18px;
+border:none;
+border-radius:50px;
+background:#1565c0;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#0d47a1;
+}
+
+@keyframes zoom{
+
+0%{transform:scale(1);}
+
+50%{transform:scale(1.1);}
+
+100%{transform:scale(1);}
+
+}
+
+.heart{
+
+position:absolute;
+
+font-size:25px;
+
+animation:fall linear infinite;
+
+}
+
+@keyframes fall{
+
+0%{
+
+transform:translateY(-100px);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(110vh);
+
+opacity:0;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎉 Happy Birthday My Rowdy ❤️</h1>
+
+<p>
+
+You are the most beautiful gift
+
+God has ever given me.
+
+Thank you for loving me.
+
+Thank you for staying with me.
+
+Thank you for being YOU.
+
+No matter where life takes us...
+
+I will always love you.
+
+❤️
+
+Forever Yours,
+
+<strong>Kuttyma</strong>
+
+</p>
+
+<button onclick="playSong()">
+
+🎵 Play Our Song
+
+</button>
+
+<audio id="song">
+
+<source src="music/song.mp3" type="audio/mpeg">
+
+</audio>
+
+</div>
+
+<script>
+
+function playSong(){
+
+document.getElementById("song").play();
+
+}
+
+for(let i=0;i<40;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="💙";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=(3+Math.random()*5)+"s";
+
+heart.style.animationDelay=Math.random()*5+"s";
+
+document.body.appendChild(heart);
+
+}
+
+</script>
+
+</body>
+</html>
