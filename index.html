@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Rowdy ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="password-page">
+
+<h1>🔒 Secret Surprise</h1>
+
+<p>Enter Password</p>
+
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="checkPassword()">Open ❤️</button>
+
+<p id="error"></p>
+
+</div>
+
+<div id="main-page" style="display:none;">
+
+<section class="hero">
+
+<h1>Happy Birthday My Rowdy ❤️</h1>
+
+<h2>From Your Kuttyma 💕</h2>
+
+<p>
+
+Every smile of mine has your reason...
+
+Every prayer of mine has your name...
+
+I Love You Forever ❤️
+
+</p>
+
+<button onclick="playMusic()">🎵 Play Our Song</button>
+</section>
+
+<audio id="song" controls style="display:none;">
+<source src="music/pirai.mp3" type="audio/mp3">
+  </audio>
+  <section class="story">
+
+<h2>📖 Our Love Story</h2>
+
+<p>
+
+27 September 2020...
+
+Instagram-ல ஆரம்பமான ஒரு சின்ன "Hi"...
+
+இன்று என் வாழ்க்கையின் மிக அழகான நினைவாக மாறிவிட்டது.
+
+நீ என் வாழ்க்கையில் வந்த பிறகு,
+
+ஒவ்வொரு நாளும் அர்த்தமுள்ள நாளாக மாறியது.
+
+</p>
+
+<p>
+
+நீ சிரிக்கும்போது என் உலகமே சிரிக்கிறது...
+
+நீ சோகமாக இருந்தால் என் இதயமும் அமைதியாகி விடுகிறது...
+
+என் வாழ்க்கையில் நடந்த மிக அழகான பரிசு நீதான்...
+
+</p>
+
+</section>
+
+<section class="gallery">
+
+<h2>📸 Our Beautiful Memories</h2>
+
+<div class="gallery-grid">
+
+<img src="images/1.jpg">
+<img src="images/2.jpg">
+<img src="images/3.jpg">
+<img src="images/4.jpg">
+<img src="images/5.jpg">
+<img src="images/6.jpg">
+<img src="images/7.jpg">
+<img src="images/8.jpg">
+<img src="images/9.jpg">
+<img src="images/10.jpg">
+
+</div>
+
+</section>
+<section class="letter">
+
+<h2>💌 A Letter To My Rowdy</h2>
+
+<p>
+
+My Dear Rowdy ❤️,
+
+Happy 29th Birthday!
+
+Every day with you is my favorite memory.
+
+From 27 September 2020 until today,
+
+you have been my biggest blessing.
+
+Thank you for loving me,
+
+supporting me,
+
+understanding me,
+
+and standing beside me.
+
+Sometimes we fight...
+
+Sometimes we stay silent...
+
+But at the end of every day,
+
+my heart chooses only you.
+
+You are my safest place,
+
+my happiness,
+
+my peace,
+
+my forever.
+
+I don't know what the future holds,
+
+but I know one thing...
+
+I want every birthday,
+
+every smile,
+
+every success,
+
+every dream,
+
+and every moment
+
+to be with you.
+
+I Love You More Than Yesterday,
+
+Less Than Tomorrow.
+
+Happy Birthday My Rowdy ❤️
+
+Forever Yours,
+
+**Your Kuttyma ❤️**
+
+</p>
+
+</section>
+
+<section class="counter">
+
+<h2>❤️ Together Since</h2>
+
+<h1 id="loveDays"></h1>
+
+<p>From 27 September 2020 💕</p>
+
+  </section>
+  <section class="birthday">
+
+<h2>🎂 Happy Birthday My Rowdy 🎂</h2>
+
+<p>
+
+Today is not just your birthday...
+
+It is the day God gifted me
+
+the most precious person in my life.
+
+May God bless you with
+
+good health,
+
+peace,
+
+success,
+
+happiness,
+
+and a long beautiful life.
+
+I pray that your smile never fades.
+
+Happy Birthday My Love ❤️
+
+</p>
+
+</section>
+
+<section class="promises">
+
+<h2>🤍 My Promises</h2>
+
+<ul>
+
+<li>❤️ I will always choose you.</li>
+
+<li>❤️ I will stand beside you in every situation.</li>
+
+<li>❤️ I will celebrate every success with you.</li>
+
+<li>❤️ I will wipe your tears before they fall.</li>
+
+<li>❤️ I will love you forever.</li>
+
+<li>❤️ You will always be My Rowdy.</li>
+
+<li>❤️ I will always be Your Kuttyma.</li>
+
+</ul>
+
+</section>
+
+<section class="surprise">
+
+<h2>🎁 One Last Surprise</h2>
+
+<button onclick="showWish()">
+Click Here My Rowdy ❤️
+</button>
+
+<p id="wish" style="display:none; font-size:24px; margin-top:20px; color:#ff2d55;">
+
+✨ Happy Birthday My Forever ❤️<br><br>
+
+No matter what happens...<br>
+No matter where life takes us...<br>
+
+I will always Love You. ❤️<br><br>
+
+Forever Yours,<br>
+
+💕 Kuttyma 💕
+
+</p>
+
+  </section>
+  <section class="quiz">
+
+<h2>💙 Memory Quiz 💙</h2>
+
+<p>When did our beautiful love story begin?</p>
+
+<input type="text" id="quizAnswer" placeholder="DDMMYYYY">
+
+<button onclick="checkAnswer()">
+Submit ❤️
+</button>
+
+<p id="quizResult"></p>
+
+</section>
+
+<footer>
+
+<h2>❤️ Thank You My Rowdy ❤️</h2>
+
+<p>
+
+Thank you for being the most beautiful part of my life.
+
+Every memory with you is a treasure.
+
+Every smile of yours is my happiness.
+
+Every heartbeat of mine whispers your name.
+
+I Love You Forever.
+
+Happy Birthday Once Again My Rowdy ❤️
+
+— Your Kuttyma 💕
+
+</p>
+
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
