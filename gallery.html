@@ -3,82 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Memories ❤️</title>
+<title>Our Gallery ❤️</title>
 <link rel="stylesheet" href="style.css">
 </head>
-  <div id="imageViewer" class="viewer" onclick="closeImage()">
-    <img id="fullImage">
-</div>
-
-<script>
-
-function openImage(image){
-
-document.getElementById("imageViewer").style.display="flex";
-
-document.getElementById("fullImage").src=image;
-
-}
-
-function closeImage(){
-
-document.getElementById("imageViewer").style.display="none";
-
-}
-
-</script>
 
 <body>
 
 <div class="page">
 
-<h1>📸 Our Beautiful Memories ❤️</h1>
+<div class="envelope">
 
-<p>
-Every picture has a story...
-Every smile has a memory...
-Every memory has YOU.
-</p>
+<div class="envelope-header">
+<h2>📸 Our Beautiful Memories ❤️</h2>
+<p>Every picture tells our love story...</p>
+</div>
+
+<div class="envelope-body">
 
 <div class="gallery-grid">
 
-<img src="images/1.jpg.jpg"
-onclick="openImage(this.src)">
-  <img src="images/2.jpg.jpg"
-onclick="openImage(this.src)">
-
-<img src="images/3.jpg.jpg"
-onclick="openImage(this.src)">
-
-<img src="images/4.jpg.jpg"
-onclick="openImage(this.src)">
-
-<img src="images/5.jpg.jpg"
-onclick="openImage(this.src)">
-
-<img src="images/6.jpg.jpg"
-onclick="openImage(this.src)">
-
-<img src="images/7.jpg.jpg"
-onclick="openImage(this.src)">
-
-<img src="images/8.jpg.jpg"
-onclick="openImage(this.src)">
-
-<img src="images/9.jpg.jpg"
-onclick="openImage(this.src)">
-
-<img src="images/10.jpg.jpg"
-onclick="openImage(this.src)">
+<div class="photo-card">
+<img src="images/1.jpg.jpg" alt="Photo 1">
+<p>❤️ The beginning of our beautiful journey.</p>
 </div>
 
-<br><br>
+<div class="photo-card">
+<img src="images/2.jpg.jpg" alt="Photo 2">
+<p>🥰 Your smile is my favourite place.</p>
+</div>
 
-<button onclick="location.href='letter.html'">
+<div class="photo-card">
+<img src="images/3.jpg.JPG" alt="Photo 3">
+<p>💙 Every memory with you is precious.</p>
+</div>
+
+<div class="photo-card">
+<img src="images/4.jpg.jpg" alt="Photo 4">
+<p>🌹 My happiness starts with you.</p>
+</div>
+
+<div class="photo-card">
+<img src="images/5.jpg.jpg" alt="Photo 5">
+<p>🤍 Thank you for loving me.</p>
+</div>
+
+<div class="photo-card">
+<img src="images/6.jpg.jpg" alt="Photo 6">
+<p>💕 My heart always belongs to you.</p>
+</div>
+
+<div class="photo-card">
+<img src="images/7.jpg.jpg" alt="Photo 7">
+<p>✨ Every day with you is a blessing.</p>
+</div>
+
+<div class="photo-card">
+<img src="images/8.jpg.jpg" alt="Photo 8">
+<p>🌍 My whole world is you.</p>
+</div>
+
+<div class="photo-card">
+<img src="images/9.jpg.jpg" alt="Photo 9">
+<p>💖 Together we made beautiful memories.</p>
+</div>
+
+<div class="photo-card">
+<img src="images/10.jpg.jpg" alt="Photo 10">
+<p>♾️ Forever with you, my Rowdy.</p>
+</div>
+
+</div>
+
+<br>
+
+<a href="letter.html" class="next-btn">
 Next ➜
-</button>
+</a>
+
+</div>
+
+</div>
 
 </div>
 
 </body>
-</html>
+  </html>
