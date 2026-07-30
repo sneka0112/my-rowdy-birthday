@@ -213,3 +213,30 @@ grid-template-columns:1fr;
 .gallery{
     min-height:100vh;
   }
+/* Remove extra bottom space */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+section {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+.next-btn {
+    margin-bottom: 0;
+  }
