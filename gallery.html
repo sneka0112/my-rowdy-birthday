@@ -6,6 +6,27 @@
 <title>Our Memories ❤️</title>
 <link rel="stylesheet" href="style.css">
 </head>
+  <div id="imageViewer" class="viewer" onclick="closeImage()">
+    <img id="fullImage">
+</div>
+
+<script>
+
+function openImage(image){
+
+document.getElementById("imageViewer").style.display="flex";
+
+document.getElementById("fullImage").src=image;
+
+}
+
+function closeImage(){
+
+document.getElementById("imageViewer").style.display="none";
+
+}
+
+</script>
 
 <body>
 
@@ -21,17 +42,34 @@ Every memory has YOU.
 
 <div class="gallery-grid">
 
-<img src="images/1.jpg.jpg" alt="Memory 1">
-<img src="images/2.jpg.jpg" alt="Memory 2">
-<img src="images/3.jpg.JPG" alt="Memory 3">
-<img src="images/4.jpg.jpg" alt="Memory 4">
-<img src="images/5.jpg.jpg" alt="Memory 5">
-<img src="images/6.jpg.jpg" alt="Memory 6">
-<img src="images/7.jpg.jpg" alt="Memory 7">
-<img src="images/8.jpg.jpg" alt="Memory 8">
-<img src="images/9.jpg.jpg" alt="Memory 9">
-<img src="images/10.jpg.jpg" alt="Memory 10">
+<img src="images/1.jpg.jpg"
+onclick="openImage(this.src)">
+  <img src="images/2.jpg.jpg"
+onclick="openImage(this.src)">
 
+<img src="images/3.jpg.jpg"
+onclick="openImage(this.src)">
+
+<img src="images/4.jpg.jpg"
+onclick="openImage(this.src)">
+
+<img src="images/5.jpg.jpg"
+onclick="openImage(this.src)">
+
+<img src="images/6.jpg.jpg"
+onclick="openImage(this.src)">
+
+<img src="images/7.jpg.jpg"
+onclick="openImage(this.src)">
+
+<img src="images/8.jpg.jpg"
+onclick="openImage(this.src)">
+
+<img src="images/9.jpg.jpg"
+onclick="openImage(this.src)">
+
+<img src="images/10.jpg.jpg"
+onclick="openImage(this.src)">
 </div>
 
 <br><br>
